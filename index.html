@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    
+    
+    <div class="container1">
+        <!-- <h1 id="solve">start solving the maze</h1> -->
+        <canvas id="canvas"></canvas>
+    </div>
+
+    
+
+    <div class="container2">
+        <img src="./undraw_Code_thinking_re_gka2.svg" alt="">
+        <h2>Level</h2>
+        <div class="select-box">
+            <div class="selected">
+                Select Level of the Maze
+            </div>
+            <div class="options">
+                <div class="option">
+                    <input type="radio" class="radio" id="easy" name="level">
+                    <label for="easy">Easy</label>
+                </div>
+    
+                <div class="option">
+                    <input type="radio" class="radio" id="medium" name="level">
+                    <label for="medium">Medium</label>
+                </div>
+    
+                <div class="option">
+                    <input type="radio" class="radio" id="difficult" name="level">
+                    <label for="difficult">Difficult</label>
+                </div>
+            </div>
+        </div>
+
+        <div id="Gen" class="button">Generate</div>
+        <div id="solve" class="button">Solve</div>
+        
+    </div>
+    
+    
+    <script src="./app.js"></script>
+    <script src="./box.js"></script>
+    <!-- <script src="./react.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+
+*{
+    margin: 2px 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* background-color: rgb(78, 78, 78); */
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    margin: 40px 0;
+    background: url(./business_background_white-01.jpg);
+    background-size: cover;
+}
+
+.container2{
+    /* position: relative;  */
+}
+
+.select-box{
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+}
+
+.selected{
+    background-color: #2b4450;
+    color: #dfebed;
+    width: 100%;
+    /* margin-bottom: 10px; */
+    border-radius: 5px;
+    position: relative;
+}
+.selected::after{
+    content: "";
+    background: url(./icon-arrow-light.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    right: 5px;
+    top: 15px;
+}
+
+.options{
+    background-color: #2b4450;
+    color: #dfebed;
+    width: 100%;
+    /* transition: all 1s; */
+    border-radius: 5px;
+    display: none;
+    
+    cursor: pointer;
+    
+    
+}
+
+.active{
+    /* max-height: 200px; */
+    opacity: 1; 
+    display: block;
+    position: absolute;
+    width: 500px;
+}
+
+.option, .selected{
+    padding: 5px 20px;
+    cursor: pointer;
+    
+}
+.option:hover{
+    background-color: #497285;
+    border-radius: 5px;
+}
+label{
+    /* cursor: pointer; */
+    
+}
+.radio{
+    display: none;
+    
+}
+
+h2{
+    color: #2b4450;
+    
+}
+canvas{
+    /* background-color: #497285; */
+    margin-top: 10px;
+    box-shadow: 2px 2px 20px 1px #497285;
+    border-radius: 5px;
+    border: 10px soild whitesmoke;
+}
+
+.button{
+    width: 100%;
+    border: 1px solid #2b4450;
+    border-radius: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #2b4450;
+    color: whitesmoke;
+
+}
+img{
+    width: 500px;
+}
